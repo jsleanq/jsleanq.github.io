@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Gridea配置及使用技巧 | Jsleanq&#39;s Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://jsleanq.github.io/favicon.ico?v=1682257467008">
+<link rel="stylesheet" href="https://jsleanq.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="在搭建博客中相关Gridea配置和步骤进行的总结
+
+配置
+基本配置：Gridea+GitHub Pages，
+文档编辑：Gridea编辑器/语雀
+安装
+1.首先需要安装Git
+2.在Gridea官网完成对应系统版本的安装
+GitHub相关配..." />
+    <meta name="keywords" content="Tools,Gridea" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://jsleanq.github.io">
+        <img src="https://jsleanq.github.io/images/avatar.png?v=1682257467008" class="site-logo">
+        <h1 class="site-title">Jsleanq&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/jsleanq" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一个不想秃头的年轻程序员
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://jsleanq.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Gridea配置及使用技巧</h2>
+            <div class="post-date">2023-04-23</div>
+            
+              <div class="feature-container" style="background-image: url('https://jsleanq.github.io/post-images/hello-gridea.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>在搭建博客中相关Gridea配置和步骤进行的总结</p>
+<!-- more -->
+<h2 id="配置">配置</h2>
+<p>基本配置：Gridea+GitHub Pages，<br>
+文档编辑：Gridea编辑器/语雀</p>
+<h3 id="安装">安装</h3>
+<p>1.首先需要安装Git<br>
+2.在Gridea官网完成对应系统版本的安装</p>
+<h3 id="github相关配置">GitHub相关配置</h3>
+<p>1.首先创建仓库，默认命名为<code>username.github.io</code>，此时博客地址为<code>https://username.github.io/</code><br>
+2.获取Token，在头像中选择<code>Settings</code>，之后左侧最下方点击<code>&lt;&gt;Developer settings</code>，进入后点击左侧最下方<code>Personal access tokens</code>，最后点击<code>Generate new token</code>，创建过程中记得勾选<code>repo</code>，完成后不要关闭网页（关闭之后无法再次查看）；<br>
+3.同样的过程，在点击<code>&lt;&gt;Developer settings</code>后，点击<code>OAuth Apps</code>，创建评论插件，并生成<code>Client ID</code>和<code>Client Secret</code>，完成后不要关闭网页（关闭之后无法再次查看）；</p>
+<h3 id="gridea相关配置">Gridea相关配置</h3>
+<p>1.安装完成后，点击Gridea中的&quot;配置&quot;，将基础配置完成后记得保存，其中注意点如下：</p>
+<ul>
+<li>域名就是博客地址，仓库为GitHub中创建的仓库名；</li>
+<li>分支：目前GitHub一般使用的是main分支，已经取消了master分支</li>
+<li>Token直接复制&quot;GitHub相关配置&quot;中第二步获取的Token（没关页面的好处在这里）<br>
+2.评论配置直接将&quot;GitHub相关配置&quot;中第三步的内容进行复制（没关页面的好处在这里）<br>
+3.样式、头像均可以自由配置，付费版确实更好看一些<br>
+4.所有配置完成后，记得保存，然后检测远程连接，成功后就可以直接同步进行页面的渲染和文章的发布了。</li>
+</ul>
+<h3 id="常见问题">常见问题</h3>
+<p>1.同步经常出现失败的问题：与GitHub的网络有关，即使用了加速器也不是很理想，<a href="https://blog.csdn.net/qq_45394976/article/details/127678924">参考方法</a><br>
+2.同步成功后，没有及时显示更新后的内容：可能是网速问题，但是一般过一段时间就正常了；</p>
+<h3 id="gridea使用特性">Gridea使用特性</h3>
+<p>📝 可以使用 <strong>Markdown</strong> 语法，进行快速创作<br>
+🌉 可以给文章配上精美的封面图和在文章任意位置插入图片<br>
+🏷️ 可以对文章进行标签分组<br>
+📋  可以自定义菜单，甚至可以创建外部链接菜单<br>
+💻 可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端<br>
+🌎 可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台<br>
+💬 可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统<br>
+🇬🇧  可以使用<strong>中文简体</strong>或<strong>英语</strong><br>
+🌁 可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力<br>
+🖥  可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<h3 id="链接">链接</h3>
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://jsleanq.github.io/tag/s961a360l/" class="tag">
+                    Tools
+                  </a>
+                
+                  <a href="https://jsleanq.github.io/tag/BI48XzVUl/" class="tag">
+                    Gridea
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://jsleanq.github.io/post/duo-mo-tai-rong-he/">
+                  <h3 class="post-title">
+                    多模态融合
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '24c19a09e8678fe0885d',
+        clientSecret: 'bafd0b8ab04c2cfcaf00053afdd0fec5f5d35f41',
+        repo: 'jsleanq.github.io',
+        owner: 'jsleanq',
+        admin: ['jsleanq'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

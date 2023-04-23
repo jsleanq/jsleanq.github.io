@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jsleanq.github.io</id>
+    <title>Jsleanq&apos;s Blog</title>
+    <updated>2023-04-23T13:48:52.450Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://jsleanq.github.io"/>
+    <link rel="self" href="https://jsleanq.github.io/atom.xml"/>
+    <subtitle>一个不想秃头的年轻程序员</subtitle>
+    <logo>https://jsleanq.github.io/images/avatar.png</logo>
+    <icon>https://jsleanq.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, Jsleanq&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Gridea配置及使用技巧]]></title>
+        <id>https://jsleanq.github.io/post/hello-gridea/</id>
+        <link href="https://jsleanq.github.io/post/hello-gridea/">
+        </link>
+        <updated>2023-04-23T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>在搭建博客中相关Gridea配置和步骤进行的总结</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在搭建博客中相关Gridea配置和步骤进行的总结</p>
+<!-- more -->
+<h2 id="配置">配置</h2>
+<p>基本配置：Gridea+GitHub Pages，<br>
+文档编辑：Gridea编辑器/语雀</p>
+<h3 id="安装">安装</h3>
+<p>1.首先需要安装Git<br>
+2.在Gridea官网完成对应系统版本的安装</p>
+<h3 id="github相关配置">GitHub相关配置</h3>
+<p>1.首先创建仓库，默认命名为<code>username.github.io</code>，此时博客地址为<code>https://username.github.io/</code><br>
+2.获取Token，在头像中选择<code>Settings</code>，之后左侧最下方点击<code>&lt;&gt;Developer settings</code>，进入后点击左侧最下方<code>Personal access tokens</code>，最后点击<code>Generate new token</code>，创建过程中记得勾选<code>repo</code>，完成后不要关闭网页（关闭之后无法再次查看）；<br>
+3.同样的过程，在点击<code>&lt;&gt;Developer settings</code>后，点击<code>OAuth Apps</code>，创建评论插件，并生成<code>Client ID</code>和<code>Client Secret</code>，完成后不要关闭网页（关闭之后无法再次查看）；</p>
+<h3 id="gridea相关配置">Gridea相关配置</h3>
+<p>1.安装完成后，点击Gridea中的&quot;配置&quot;，将基础配置完成后记得保存，其中注意点如下：</p>
+<ul>
+<li>域名就是博客地址，仓库为GitHub中创建的仓库名；</li>
+<li>分支：目前GitHub一般使用的是main分支，已经取消了master分支</li>
+<li>Token直接复制&quot;GitHub相关配置&quot;中第二步获取的Token（没关页面的好处在这里）<br>
+2.评论配置直接将&quot;GitHub相关配置&quot;中第三步的内容进行复制（没关页面的好处在这里）<br>
+3.样式、头像均可以自由配置，付费版确实更好看一些<br>
+4.所有配置完成后，记得保存，然后检测远程连接，成功后就可以直接同步进行页面的渲染和文章的发布了。</li>
+</ul>
+<h3 id="常见问题">常见问题</h3>
+<p>1.同步经常出现失败的问题：与GitHub的网络有关，即使用了加速器也不是很理想，<a href="https://blog.csdn.net/qq_45394976/article/details/127678924">参考方法</a><br>
+2.同步成功后，没有及时显示更新后的内容：可能是网速问题，但是一般过一段时间就正常了；</p>
+<h3 id="gridea使用特性">Gridea使用特性</h3>
+<p>📝 可以使用 <strong>Markdown</strong> 语法，进行快速创作<br>
+🌉 可以给文章配上精美的封面图和在文章任意位置插入图片<br>
+🏷️ 可以对文章进行标签分组<br>
+📋  可以自定义菜单，甚至可以创建外部链接菜单<br>
+💻 可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端<br>
+🌎 可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台<br>
+💬 可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统<br>
+🇬🇧  可以使用<strong>中文简体</strong>或<strong>英语</strong><br>
+🌁 可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力<br>
+🖥  可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<h3 id="链接">链接</h3>
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[多模态融合]]></title>
+        <id>https://jsleanq.github.io/post/duo-mo-tai-rong-he/</id>
+        <link href="https://jsleanq.github.io/post/duo-mo-tai-rong-he/">
+        </link>
+        <updated>2023-04-23T11:04:34.000Z</updated>
+        <content type="html"><![CDATA[<p>定义：通过整合多种交流模态，包括语言、声学、视觉、触觉和生理信息，设计具有理解、推理和学习等智能能力的计算机智能体<br>
+多模态：不同存在形式或者不同信息来源，或者说对于同一个描述对象通过不同领域或者视角获取到的数据，把描述这些数据的每一个领域或者一个视角叫做一个模态</p>
+<h2 id="1核心技术挑战">1.核心技术挑战</h2>
+<p>关键原则：<br>
+(1)模态是异质的，因为在不同模态中出现的信息往往表现出不同的质量、结构和表征;<br>
+(2)模态是相互联系的，因为它们经常相关、共享共性，或在用于任务推断时相互作用产生新信息<br>
+<img src="https://jsleanq.github.io/post-images/1682257457146.jpg" alt="" loading="lazy"></p>
+<h3 id="表征"><strong>表征</strong></h3>
+<p>学习反映个体模态元素之间的异质性和相互联系的表征<br>
+(1)表示融合:整合来自2个或更多模态的信息，有效减少单独表示的数量;<br>
+(2)表示协调:互换跨模态信息，目标是保持相同的表示数量，但改善多模态语境化;创建一个新的不相交的表示集，其数量通常大于输入集，反映有关内部结构的知识，如数据聚类或因子分解。</p>
+<h3 id="对齐"><strong>对齐</strong></h3>
+<p>识别样式元素之间的连接和交互<br>
+(1)识别模态元素之间的连接<br>
+(2)上下文表示学习以捕获模态连接和交互<br>
+(3)处理具有歧义分割的模态输入。</p>
+<h3 id="推理"><strong>推理</strong></h3>
+<p>从多模态证据中组合知识，通常通过多个推理步骤，为特定任务开发多模态对齐和问题结构<br>
+(1)对推理发生的结构建模<br>
+(2)推理过程中的中间概念<br>
+(3)理解更抽象概念的推理范式<br>
+(4)在结构、概念和推理的研究中利用大规模的外部知识</p>
+<h3 id="生成"><strong>生成</strong></h3>
+<p>反映每个模态的独特异质性和模态之间的相互联系的原始模态<br>
+(1)总结:总结多模态数据以减少信息内容，同时突出输入中最突出的部分<br>
+(2)翻译:从一种模态转换到另一种模态并保持信息内容，同时与跨模态交互保持一致<br>
+(3)创造:同时生成多个模态以增加信息内容，同时保持模态内部和跨模态的一致性</p>
+<h3 id="迁移"><strong>迁移</strong></h3>
+<p>在模态及其表示之间迁移知识<br>
+(1)跨模态迁移:使模型适应涉及主要模态的下游任务<br>
+(2)共同学习:通过在两种模态之间共享表示空间，将信息从次要模态转移到主要模态</p>
+<h3 id="量化"><strong>量化</strong></h3>
+<p>涉及实证和理论研究，以更好地理解异质性、模态相互联系和多模态学习过程<br>
+(1)多模态数据集的异质性维度以及它们如何影响建模和学习<br>
+(2)多模态数据集和训练过的模型中模态连接和交互的存在和类型<br>
+(3)异构数据涉及的学习和优化挑战</p>
+<h2 id="2融合类型">2.融合类型</h2>
+<h3 id="传统融合规则">传统融合规则</h3>
+<h4 id="早期前融合">早期（前）融合</h4>
+<h4 id="特征融合">特征融合</h4>
+<h4 id="后融合">后融合</h4>
+<h3 id="多模式融合方法">多模式融合方法</h3>
+<figure data-type="image" tabindex="1"><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrnkxTVXMrEsfcPkXd1ILxldGy2yibqQedqar82cxaVib7iaC4WbFKthlKyDZlXv8Lu3dkTG43SiaChEQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1#id=Z4xIc&amp;originHeight=221&amp;originWidth=536&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=" alt="" loading="lazy"></figure>
+<h4 id="强融合">强融合</h4>
+<h5 id="早期前融合-2">早期（前）融合</h5>
+<p>无论是直接将数据类型转化一致，然后concat成一体，还是LiDAR信息与Image的特征信息进行融合，还是说两者先进行特征的语义连接后成为输入，这些都是Early Fusion的操作。其实这样的输入一体化操作的好处自然是结构简便、容易部署。通过语义的提前交互，也解决了传统早期融合，模态之间语义信息交互不充分的问题。所以一定程度上，选择Early Fusion也是一个不错的选择</p>
+<h5 id="深度特征融合">深度（特征）融合</h5>
+<p>LiDAR点图分支和Images分支在经过各自的特征提取器后，得到高维度的特征图，并通过一系列下游模块对两个分支模态进行融合。与其他的融合方式不同，深度融合有时候也会通过级联的方式对高级特征和原始特征进行融合，同时利用高级的特征信息和含有丰富物理信息的原始特征</p>
+<h5 id="后期后融合">后期（后）融合</h5>
+<p>表示在每个模态中融合结果的方法。一些后融合方法其实是同时利用了LiDAR点云分支和相机图像分支的输出，并通过两种模式的结果进行最终预测。后期融合可以看作是一种利用多模态信息对最终方案进行优化的集成方法</p>
+<h5 id="不对称融合">不对称融合</h5>
+<p>会对不同的分支赋予不同的特权，因此我们将融合来自一个分支的对象级信息，而来自其他分支的数据级或功能级信息的方法定义为不对称融合,不对称融合方法至少有一个分支占主导地位，其他分支只是提供辅助信息来完成最后的任务。与后期融合相比，虽然它们提取特征的过程是相似的，但不对称融合只有来自一个分支的一个提议，而后融合会融合所有的分支信息</p>
+<h4 id="弱融合">弱融合</h4>
+<p>它直接将选中的原始LiDAR信息输入到LiDAR主干中，过程中不会直接与Image的分支主干进行特征的交互，会通过一些弱连接的方式（比如loss函数）等方式进行最后的信息融合。与之前的强融合的方法比，分支的信息交互是最少的，但是同时也能够避免在交互过程中彼此的信息不对称带来的信息干扰，又或者是避免了因为单一分支的质量不过关，而影响整理整体的融合推理</p>
+<h3 id="未来发展">未来发展</h3>
+<h4 id="融合方法改进">融合方法改进</h4>
+<p>当前阻碍模态融合的最大问题：融合模型不对齐和信息丢失<br>
+因为数据样本会存在噪声，在噪声的干扰下显然是没有办法做到精准对齐的，单靠机械的手段消除机器带来的误差，不仅难度大，还要付出比较大的成本。所以我们可以看到现在的方法，除了这种严格的转化，一一对应之外，还可以利用一些周围信息作为补充以使得融合工作可以获得更好的性能<br>
+还有一些方法是采用直接的串联数据，通过赋权值的方式进行融合。但是当前的方案依旧是不太成熟，只通过像素之间的赋权值，相加这些简单的操作可能无法融合分布差异较大的数据，因此，很难弥合两种模式之间的语义差距。一些工作试图使用更精细的级联结构来融合数据并提高性能。在未来的研究中，双线性映射等机制可以融合不同特征的特征。</p>
+<h4 id="利用多个模态的信息">利用多个模态的信息</h4>
+<p>一个多任务框架，一次性覆盖不同的任务<br>
+例如，车道检测可以直观地为车道间车辆的检测提供额外的帮助，同时语义分割结果可以提高目标检测性能<br>
+未来的研究可以集中在如何利用多模态数据进行自监督学习，（包括预训练、微调或对比学习）。通过实现这些最先进的机制，融合模型将导致对数据的更深入的理解，并取得更好的结果</p>
+<h4 id="感知传感器的内在问题">感知传感器的内在问题</h4>
+<p>不同传感器提取的原始数据具有严重的领域相关特征。不同的相机系统有不同的光学特性，成像原理也不一致。更重要的是，数据本身可能是有领域差异的，如天气、季节或位置，即使它是由相同的传感器捕获的，他们所呈现出来的影像也有着很大的出入<br>
+来自不同模式的传感器通常具有不同的分辨率。例如，激光雷达的空间密度明显低于图像。无论采用哪种投影方法，都没有办法找到一一对应关系，所以常规的操作会剔除一些信息。无论是由于特征向量的分辨率不同还是原始信息的不平衡，都可能会导致弱化了一边模态分支的信息量，或者说是存在感。<br>
+未来的工作可以探索一种与不同空间分辨率的传感器兼容的数据方式。</p>
+]]></content>
+    </entry>
+</feed>
